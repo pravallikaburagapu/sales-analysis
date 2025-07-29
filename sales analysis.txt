@@ -1,0 +1,7 @@
+1.Gross profit = SUM(Sheet1[Sales_Amount])-(Sheet1[Unit_Cost]*Sheet1[Quantity_Sold])
+2.Gross profit margin = DIVIDE(Sheet1[Gross profit],SUM(Sheet1[Sales_Amount]),0)
+3.MTD MARCH = CALCULATE(SUM(Sheet1[Sales_Amount]),Sheet1[Sale_Date]>=DATE(2023,3,1)&&Sheet1[Sale_Date]<=DATE(2023,3,31))
+4.MTD MARCH quantity = CALCULATE(SUM(Sheet1[Quantity_Sold]),Sheet1[Sale_Date]>=DATE(2023,3,1)&&Sheet1[Sale_Date]<=DATE(2023,3,31))
+5.net profit = Sheet1[Sales_Amount]-Sheet1[Total cost]
+6.net revenue after discount = SUMX(sheet1,Sheet1[Sales_Amount]*(1-Sheet1[Discount]))
+7.Total cost = Sheet1[Unit_Cost]*Sheet1[Quantity_Sold]
